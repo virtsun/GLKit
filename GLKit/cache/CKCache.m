@@ -10,7 +10,7 @@
 #include <CommonCrypto/CommonDigest.h>
 #import "SerializeKit.h"
 
-__inline NSString *md5(NSString *str){
+static __inline  NSString *md5(NSString *str){
     const char *original_str = [str UTF8String];
     unsigned char result[CC_MD5_DIGEST_LENGTH];
     CC_MD5(original_str, (CC_LONG)strlen(original_str), result);

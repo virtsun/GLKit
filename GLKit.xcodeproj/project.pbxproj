@@ -17,7 +17,7 @@
 		F161046A21AD14B7005CBA6D /* CKURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = F161046621AD14B7005CBA6D /* CKURLProtocol.m */; };
 		F161046B21AD14B7005CBA6D /* NSURLProtocol+WKWebview.h in Headers */ = {isa = PBXBuildFile; fileRef = F161046721AD14B7005CBA6D /* NSURLProtocol+WKWebview.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F161046C21AD14B7005CBA6D /* CKURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = F161046821AD14B7005CBA6D /* CKURLProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F161047021AD152F005CBA6D /* CKCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = F161046E21AD152E005CBA6D /* CKCache.mm */; };
+		F161047021AD152F005CBA6D /* CKCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F161046E21AD152E005CBA6D /* CKCache.m */; };
 		F161047121AD152F005CBA6D /* CKCache.h in Headers */ = {isa = PBXBuildFile; fileRef = F161046F21AD152E005CBA6D /* CKCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F161047321AD154D005CBA6D /* Singleton.h in Headers */ = {isa = PBXBuildFile; fileRef = F161047221AD154D005CBA6D /* Singleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F161047521AD160E005CBA6D /* SerializeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F161047421AD160E005CBA6D /* SerializeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -46,7 +46,7 @@
 		F161046621AD14B7005CBA6D /* CKURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKURLProtocol.m; sourceTree = "<group>"; };
 		F161046721AD14B7005CBA6D /* NSURLProtocol+WKWebview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLProtocol+WKWebview.h"; sourceTree = "<group>"; };
 		F161046821AD14B7005CBA6D /* CKURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKURLProtocol.h; sourceTree = "<group>"; };
-		F161046E21AD152E005CBA6D /* CKCache.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CKCache.mm; sourceTree = "<group>"; };
+		F161046E21AD152E005CBA6D /* CKCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKCache.m; sourceTree = "<group>"; };
 		F161046F21AD152E005CBA6D /* CKCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKCache.h; sourceTree = "<group>"; };
 		F161047221AD154D005CBA6D /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		F161047421AD160E005CBA6D /* SerializeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SerializeKit.h; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				F161046F21AD152E005CBA6D /* CKCache.h */,
-				F161046E21AD152E005CBA6D /* CKCache.mm */,
+				F161046E21AD152E005CBA6D /* CKCache.m */,
 			);
 			path = cache;
 			sourceTree = "<group>";
@@ -285,7 +285,7 @@
 			files = (
 				F1695BB121C3771D00790DB1 /* UIView+Extension.m in Sources */,
 				F161041E21A67D94005CBA6D /* UIApplication+Present.m in Sources */,
-				F161047021AD152F005CBA6D /* CKCache.mm in Sources */,
+				F161047021AD152F005CBA6D /* CKCache.m in Sources */,
 				F161041A21A67C9A005CBA6D /* CKPopView.m in Sources */,
 				F1695BA921C22C7700790DB1 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				F10E7CF121B4D592000DFC95 /* NSObject+Swizzling.m in Sources */,
