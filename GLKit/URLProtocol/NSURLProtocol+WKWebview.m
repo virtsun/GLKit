@@ -8,7 +8,7 @@
 
 #import "NSURLProtocol+WKWebview.h"
 
-#import <WebKit/WebKit.h>
+@import WebKit;
 //FOUNDATION_STATIC_INLINE 属于属于runtime范畴，你的.m文件需要频繁调用一个函数,可以用static inline来声明。从SDWebImage从get到的。
 FOUNDATION_STATIC_INLINE Class ContextControllerClass() {
     static Class cls;
