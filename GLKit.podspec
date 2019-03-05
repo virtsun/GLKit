@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "GLKit"
-  s.version      = "0.0.1"
+  s.version      = "1.0.0"
   s.summary      = "大家都可以使用的公共组件"
 
   # This description is used to generate tags and improve search results.
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = "这是一个公共的开发组件"
+  s.description  = "这是一个公共的开发组件,大家随时取用"
 
   s.homepage     = "https://github.com/virtsun/GLKit"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -70,7 +70,6 @@ Pod::Spec.new do |s|
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
-s.Version = "1.0.0" 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
