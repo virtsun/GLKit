@@ -282,7 +282,7 @@
     return nil;
 }
 + (BOOL)findSubView:(Class)objClass view:(UIView*)v allSameType:(BOOL)same container:(NSMutableArray *)container{
-    __block BOOL found = nil;
+    __block BOOL found = NO;
     [v.subviews enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         if ([obj isKindOfClass:objClass]) {
             found = YES;

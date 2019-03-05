@@ -27,6 +27,7 @@
 		F1695BB221C3771D00790DB1 /* UIView+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = F1695BB021C3771D00790DB1 /* UIView+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F1B0FE95222E20110056FE9C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B0FE94222E20110056FE9C /* UIKit.framework */; };
 		F1B0FE97222E20180056FE9C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B0FE96222E20180056FE9C /* WebKit.framework */; };
+		F1B0FE98222E22480056FE9C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1E15E9821A27F97009B3AD8 /* Info.plist */; };
 		F1E15E9921A27F97009B3AD8 /* ClawsofhadesKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F1E15E9721A27F97009B3AD8 /* ClawsofhadesKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F1E15EA421A27FF8009B3AD8 /* GCDTimerQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = F1E15EA021A27FF8009B3AD8 /* GCDTimerQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F1E15EA521A27FF8009B3AD8 /* GCDTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = F1E15EA121A27FF8009B3AD8 /* GCDTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -271,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1B0FE98222E22480056FE9C /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
