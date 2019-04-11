@@ -33,6 +33,10 @@
 		F171EBB2225ED4D100227A13 /* ULBCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F171EBAC225ED4D100227A13 /* ULBCollectionViewFlowLayout.m */; };
 		F171EBB3225ED4D100227A13 /* UIDraggableCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = F171EBAD225ED4D100227A13 /* UIDraggableCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F171EBB4225ED4D100227A13 /* UICollectionViewFallFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = F171EBAE225ED4D100227A13 /* UICollectionViewFallFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F171EBC3225F019500227A13 /* NSObject+Observer.h in Headers */ = {isa = PBXBuildFile; fileRef = F171EBC1225F019500227A13 /* NSObject+Observer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F171EBC4225F019500227A13 /* NSObject+Observer.m in Sources */ = {isa = PBXBuildFile; fileRef = F171EBC2225F019500227A13 /* NSObject+Observer.m */; };
+		F171EBC8225F05F700227A13 /* UIScrollView+StatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F171EBC6225F05F700227A13 /* UIScrollView+StatusBar.m */; };
+		F171EBC9225F05F700227A13 /* UIScrollView+StatusBar.h in Headers */ = {isa = PBXBuildFile; fileRef = F171EBC7225F05F700227A13 /* UIScrollView+StatusBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F1B0FE95222E20110056FE9C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B0FE94222E20110056FE9C /* UIKit.framework */; };
 		F1B0FE97222E20180056FE9C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B0FE96222E20180056FE9C /* WebKit.framework */; };
 		F1E15E9921A27F97009B3AD8 /* ClawsofhadesKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F1E15E9721A27F97009B3AD8 /* ClawsofhadesKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -69,6 +73,10 @@
 		F171EBAC225ED4D100227A13 /* ULBCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ULBCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		F171EBAD225ED4D100227A13 /* UIDraggableCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDraggableCollectionView.h; sourceTree = "<group>"; };
 		F171EBAE225ED4D100227A13 /* UICollectionViewFallFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionViewFallFlowLayout.h; sourceTree = "<group>"; };
+		F171EBC1225F019500227A13 /* NSObject+Observer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Observer.h"; sourceTree = "<group>"; };
+		F171EBC2225F019500227A13 /* NSObject+Observer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Observer.m"; sourceTree = "<group>"; };
+		F171EBC6225F05F700227A13 /* UIScrollView+StatusBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+StatusBar.m"; sourceTree = "<group>"; };
+		F171EBC7225F05F700227A13 /* UIScrollView+StatusBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+StatusBar.h"; sourceTree = "<group>"; };
 		F1B0FE94222E20110056FE9C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F1B0FE96222E20180056FE9C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		F1E15E9421A27F97009B3AD8 /* GLKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GLKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +106,8 @@
 			children = (
 				F10E7CEE21B4D592000DFC95 /* NSObject+Swizzling.h */,
 				F10E7CEF21B4D592000DFC95 /* NSObject+Swizzling.m */,
+				F171EBC1225F019500227A13 /* NSObject+Observer.h */,
+				F171EBC2225F019500227A13 /* NSObject+Observer.m */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
@@ -173,6 +183,15 @@
 			path = collectionView;
 			sourceTree = "<group>";
 		};
+		F171EBC5225F05F700227A13 /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				F171EBC6225F05F700227A13 /* UIScrollView+StatusBar.m */,
+				F171EBC7225F05F700227A13 /* UIScrollView+StatusBar.h */,
+			);
+			path = ScrollView;
+			sourceTree = "<group>";
+		};
 		F1B0FE93222E20110056FE9C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +221,7 @@
 		F1E15E9621A27F97009B3AD8 /* GLKit */ = {
 			isa = PBXGroup;
 			children = (
+				F171EBC5225F05F700227A13 /* ScrollView */,
 				F171EBA8225ED4D100227A13 /* collectionView */,
 				F171EBA3225ED3BF00227A13 /* UITextField */,
 				F1695BAE21C3771000790DB1 /* UIView */,
@@ -252,6 +272,8 @@
 				F171EBB0225ED4D100227A13 /* ULBCollectionViewFlowLayout.h in Headers */,
 				F171EBB4225ED4D100227A13 /* UICollectionViewFallFlowLayout.h in Headers */,
 				F171EBB3225ED4D100227A13 /* UIDraggableCollectionView.h in Headers */,
+				F171EBC3225F019500227A13 /* NSObject+Observer.h in Headers */,
+				F171EBC9225F05F700227A13 /* UIScrollView+StatusBar.h in Headers */,
 				F1695BB221C3771D00790DB1 /* UIView+Extension.h in Headers */,
 				F1E15EA521A27FF8009B3AD8 /* GCDTimer.h in Headers */,
 			);
@@ -299,6 +321,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = F1E15E8A21A27F97009B3AD8;
 			productRefGroup = F1E15E9521A27F97009B3AD8 /* Products */;
@@ -333,12 +356,14 @@
 				F161041A21A67C9A005CBA6D /* CKPopView.m in Sources */,
 				F1695BA921C22C7700790DB1 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				F10E7CF121B4D592000DFC95 /* NSObject+Swizzling.m in Sources */,
+				F171EBC4225F019500227A13 /* NSObject+Observer.m in Sources */,
 				F171EBB1225ED4D100227A13 /* UICollectionViewFallFlowLayout.m in Sources */,
 				F171EBA7225ED3BF00227A13 /* UITextField+limit.m in Sources */,
 				F1E15EA721A27FF8009B3AD8 /* GCDTimer.m in Sources */,
 				F161046A21AD14B7005CBA6D /* CKURLProtocol.m in Sources */,
 				F1E15EA621A27FF8009B3AD8 /* GCDTimerQueue.m in Sources */,
 				F161046921AD14B7005CBA6D /* NSURLProtocol+WKWebview.m in Sources */,
+				F171EBC8225F05F700227A13 /* UIScrollView+StatusBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
