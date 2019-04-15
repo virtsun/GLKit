@@ -18,8 +18,7 @@
 @end
 
 @implementation FlowBaseController{
-    NSMutableArray *__registedCells;
-    NSMutableArray *__registedSections;
+
 }
 
 - (void)viewDidLoad {
@@ -27,9 +26,6 @@
     self.edgesForExtendedLayout = YES;
     // Do any additional setup after loading the view.
     [self initTableView];
-    
-    __registedCells = [NSMutableArray new];
-    __registedSections = [NSMutableArray new];
     
 }
 - (void)initTableView{
@@ -53,7 +49,6 @@
 #pragma mark --
 #pragma mark -- Setter && Getter
 - (void)updateDataSource{
-    [self registerClassess:self.provider.dataSource];
     
     [self.flowView.collectionViewLayout invalidateLayout];
     [self.flowView reloadData];
@@ -61,100 +56,6 @@
 - (void)setProvider:(FlowProvider *)provider{
     _provider = provider;
     _provider.delegate = self;
-}
-
-- (BOOL)existXib:(Class)cls{
-    return [[NSBundle mainBundle] pathForResource:NSStringFromClass(cls)
-                                           ofType:@"nib"].length > 0;
-}
-- (void)registerClassess:(NSArray<FlowSectionViewModel *> *)dataSource{
-    /*注册cell*/
-    
-    [dataSource enumerateObjectsUsingBlock:^(FlowSectionViewModel * _Nonnull section, NSUInteger idx, BOOL * _Nonnull stop) {
-        
-        if (section.headerModel){
-            NSString *identifier = NSStringFromClass(section.headerModel.registedClass);
-            
-            if (![self->__registedSections containsObject:identifier]){
-                
-                @try{
-                    if ([self existXib:section.headerModel.registedClass]){
-                        NSArray *xibs = [[NSBundle mainBundle] loadNibNamed:identifier owner:nil options:nil];
-
-                        UINib *nib = [UINib nibWithNibName:NSStringFromClass([xibs.firstObject class]) bundle:nil];
-                        [self.flowView registerNib:nib
-                       forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NSStringFromClass(section.headerModel.registedClass)];
-                        
-                    }else{
-                        [self.flowView registerClass:section.headerModel.registedClass
-                                 forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NSStringFromClass(section.headerModel.registedClass)];
-                    }
-                    
-                }@catch(NSException *exception){
-                    [self.flowView registerClass:section.headerModel.registedClass
-                             forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NSStringFromClass(section.headerModel.registedClass)];
-                    
-                }@finally{
-                    [self->__registedSections addObject:identifier];
-                }
-                
-            }
-        }
-        if (section.footerModel){
-            NSString *identifier = NSStringFromClass(section.footerModel.registedClass);
-            
-            if (![self->__registedSections containsObject:identifier]){
-                
-                @try{
-                    if ([self existXib:section.footerModel.registedClass]){
-                        NSArray *xibs = [[NSBundle mainBundle] loadNibNamed:identifier owner:nil options:nil];
-                        UINib *nib = [UINib nibWithNibName:NSStringFromClass([xibs.firstObject class]) bundle:nil];
-                        [self.flowView registerNib:nib
-                               forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:NSStringFromClass(section.footerModel.registedClass)];
-                        
-                    }else{
-                        [self.flowView registerClass:section.footerModel.registedClass
-                                 forSupplementaryViewOfKind:UICollectionElementKindSectionFooter
-                                        withReuseIdentifier:NSStringFromClass(section.footerModel.registedClass)];
-                    }
-                    
-                }@catch(NSException *exception){
-                    [self.flowView registerClass:section.footerModel.registedClass
-                             forSupplementaryViewOfKind:UICollectionElementKindSectionFooter
-                                    withReuseIdentifier:NSStringFromClass(section.footerModel.registedClass)];
-                    
-                }@finally{
-                    [self->__registedSections addObject:identifier];
-                }
-            }
-        }
-      
-        
-        //注册cell
-        [section.cellModels enumerateObjectsUsingBlock:^(FlowBaseViewModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-           
-            NSString *identifier = NSStringFromClass(obj.registedClass);
-            
-            if (![self->__registedCells containsObject:identifier]){
-                @try{
-                    if ([self existXib:obj.registedClass]){
-                        NSArray *xibs = [[NSBundle mainBundle] loadNibNamed:identifier owner:nil options:nil];
-                        UINib *nib = [UINib nibWithNibName:NSStringFromClass([xibs.firstObject class]) bundle:nil];
-                        [self.flowView registerNib:nib forCellWithReuseIdentifier:identifier];
-                    }else{
-                        [self.flowView registerClass:obj.registedClass forCellWithReuseIdentifier:identifier];
-                    }
-
-                }@catch(NSException *exception){
-                    [self.flowView registerClass:obj.registedClass forCellWithReuseIdentifier:identifier];
-                }@finally{
-                    [self->__registedCells addObject:identifier];
-                }
-            }
-           
-        }];
-    }];
-
 }
 
 #pragma mark --
