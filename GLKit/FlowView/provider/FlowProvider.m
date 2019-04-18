@@ -17,6 +17,8 @@
     FlowProvider *fp = [[[self class] alloc] init];
     fp.flowView = flowView;
     
+    [fp update];
+    
     return fp;
 }
 

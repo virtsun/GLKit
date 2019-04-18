@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "GLKit"
-  s.version      = "1.1.3"
+  s.version      = "1.2.0"
   s.summary      = "大家都可以使用的公共组件"
 
   # This description is used to generate tags and improve search results.
@@ -88,10 +88,42 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "GLKit", "GLKit/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.subspec 'Types' do |ss|
+      ss.source_files = 'GLKit/Types/**/*.{h,m}'
+  end
 
-  # s.public_header_files = "Classes/**/*.h"
+  s.subspec 'Catagory' do |ss|
+      ss.source_files = 'GLKit/Catagory/**/*.{h,m}'
+      ss.dependency 'GLKit/Types'
+  end
+
+  s.subspec 'FlowView' do |ss|
+      ss.source_files = 'GLKit/FlowView/**/*.{h,m}'
+  end
+
+   s.subspec 'Cache' do |ss|
+      ss.source_files = 'GLKit/Cache/**/*.{h,m}'
+      ss.dependency 'GLKit/Types'
+  end
+
+  s.subspec 'URLProtocol' do |ss|
+      ss.source_files = 'GLKit/URLProtocol/**/*.{h,m}'
+      ss.dependency 'GLKit/Cache'
+  end
+
+  s.subspec 'PopView' do |ss|
+      ss.source_files = 'GLKit/PopView/**/*.{h,m}'
+      ss.dependency 'GLKit/Catagory'
+  end
+
+  s.subspec 'GCDTimer' do |ss|
+      ss.source_files = 'GLKit/GCDTimer/**/*.{h,m}'
+  end
+
+  s.source_files  = "GLKit", "GLKit/*.{h,m}"
+  s.exclude_files = "GLKit/Exclude"
+
+  s.public_header_files = "GLKit/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
