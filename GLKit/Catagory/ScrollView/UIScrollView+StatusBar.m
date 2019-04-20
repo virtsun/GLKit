@@ -36,7 +36,12 @@
 - (UIStatusBarStyle)statusBarStyle{
     return [objc_getAssociatedObject(self, "statusBarType") intValue];
 }
-
+- (void)setBarMode:(UIScrollViewStatusBarMode)barMode{
+    objc_setAssociatedObject(self, "barMode", @(barMode), OBJC_ASSOCIATION_COPY);
+}
+- (UIScrollViewStatusBarMode)barMode{
+    return [objc_getAssociatedObject(self, "barMode") intValue];
+}
 - (void)setJudgeMaximumHeight:(CGFloat)judgeMaximumHeight{
     objc_setAssociatedObject(self, "judgeMaximumHeight", @(judgeMaximumHeight), OBJC_ASSOCIATION_COPY);
 }
@@ -48,9 +53,21 @@
 
     self.statusBar.center = CGPointMake(CGRectGetWidth(self.bounds)/2, CGRectGetHeight(self.statusBar.bounds)/2 + self.contentOffset.y);
     if (self.judgeMaximumHeight > 0){
-        self.statusBar.alpha = (self.contentOffset.y + self.contentInset.top)/self.judgeMaximumHeight;
+        CGFloat alpha = (self.contentOffset.y + self.contentInset.top)/self.judgeMaximumHeight;
+        
+        if (self.barMode == UIScrollViewStatusBarModeAlpha){
+            self.statusBar.alpha = alpha;
+        }else{
+            self.statusBar.backgroundColor = [self.statusBar.backgroundColor colorWithAlphaComponent:alpha];
+        }
     }else{
-        self.statusBar.alpha = (self.contentOffset.y + self.contentInset.top)/CGRectGetHeight(self.statusBar.bounds);
+        CGFloat alpha = (self.contentOffset.y + self.contentInset.top)/CGRectGetHeight(self.statusBar.bounds);
+        
+        if (self.barMode == UIScrollViewStatusBarModeAlpha){
+            self.statusBar.alpha = alpha;
+        }else{
+            self.statusBar.backgroundColor = [self.statusBar.backgroundColor colorWithAlphaComponent:alpha];
+        }
     }
     [self bringSubviewToFront:self.statusBar];
     
