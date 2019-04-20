@@ -17,7 +17,7 @@
     NSInteger ratio = [UIScreen mainScreen].scale;
     UIFakeSizeImage *image = nil;
     do{
-        NSString *filename = ratio > 1?[name stringByAppendingFormat:@"@%ldx", ratio]:name;
+        NSString *filename = ratio > 1?[name stringByAppendingFormat:@"@%ldx", (long)ratio]:name;
         NSString *file = [bundle pathForResource:filename ofType:@"png"];
         
         if (!file) continue;
