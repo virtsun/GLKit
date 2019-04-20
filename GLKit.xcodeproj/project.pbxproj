@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		86972EE7226B597A003C9598 /* UIColor+Extends.h in Headers */ = {isa = PBXBuildFile; fileRef = 86972EE5226B597A003C9598 /* UIColor+Extends.h */; };
+		86972EE7226B597A003C9598 /* UIColor+Extends.h in Headers */ = {isa = PBXBuildFile; fileRef = 86972EE5226B597A003C9598 /* UIColor+Extends.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		86972EE8226B597A003C9598 /* UIColor+Extends.m in Sources */ = {isa = PBXBuildFile; fileRef = 86972EE6226B597A003C9598 /* UIColor+Extends.m */; };
-		86972EEC226B5C8E003C9598 /* NSDate+Extends.h in Headers */ = {isa = PBXBuildFile; fileRef = 86972EEA226B5C8E003C9598 /* NSDate+Extends.h */; };
+		86972EEC226B5C8E003C9598 /* NSDate+Extends.h in Headers */ = {isa = PBXBuildFile; fileRef = 86972EEA226B5C8E003C9598 /* NSDate+Extends.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		86972EED226B5C8E003C9598 /* NSDate+Extends.m in Sources */ = {isa = PBXBuildFile; fileRef = 86972EEB226B5C8E003C9598 /* NSDate+Extends.m */; };
 		86972EF5226B5C97003C9598 /* UIImage+AI.m in Sources */ = {isa = PBXBuildFile; fileRef = 86972EEF226B5C97003C9598 /* UIImage+AI.m */; };
 		86972EF7226B5C97003C9598 /* UIFakeSizeImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 86972EF1226B5C97003C9598 /* UIFakeSizeImage.m */; };
-		86972EF8226B5C97003C9598 /* UIFakeSizeImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 86972EF2226B5C97003C9598 /* UIFakeSizeImage.h */; };
-		86972EFA226B5C97003C9598 /* UIImage+AI.h in Headers */ = {isa = PBXBuildFile; fileRef = 86972EF4226B5C97003C9598 /* UIImage+AI.h */; };
+		86972EF8226B5C97003C9598 /* UIFakeSizeImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 86972EF2226B5C97003C9598 /* UIFakeSizeImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86972EFA226B5C97003C9598 /* UIImage+AI.h in Headers */ = {isa = PBXBuildFile; fileRef = 86972EF4226B5C97003C9598 /* UIImage+AI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F10E7CF021B4D592000DFC95 /* NSObject+Swizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = F10E7CEE21B4D592000DFC95 /* NSObject+Swizzling.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F10E7CF121B4D592000DFC95 /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = F10E7CEF21B4D592000DFC95 /* NSObject+Swizzling.m */; };
 		F161041921A67C9A005CBA6D /* CKPopView.h in Headers */ = {isa = PBXBuildFile; fileRef = F161041721A67C99005CBA6D /* CKPopView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -436,9 +436,7 @@
 				F161047321AD154D005CBA6D /* Singleton.h in Headers */,
 				F161046C21AD14B7005CBA6D /* CKURLProtocol.h in Headers */,
 				F161046B21AD14B7005CBA6D /* NSURLProtocol+WKWebview.h in Headers */,
-				86972EFA226B5C97003C9598 /* UIImage+AI.h in Headers */,
 				F161041F21A67D94005CBA6D /* UIApplication+Present.h in Headers */,
-				86972EEC226B5C8E003C9598 /* NSDate+Extends.h in Headers */,
 				F10E7CF021B4D592000DFC95 /* NSObject+Swizzling.h in Headers */,
 				F161041921A67C9A005CBA6D /* CKPopView.h in Headers */,
 				F1695BAA21C22C7700790DB1 /* UINavigationController+FDFullscreenPopGesture.h in Headers */,
@@ -455,9 +453,11 @@
 				F1F72F6622641CF40079A0A1 /* FlowCommonAccessoryCell.h in Headers */,
 				F1F72F5822641CF40079A0A1 /* FlowProvider.h in Headers */,
 				F1F72F6022641CF40079A0A1 /* FlowCommonCell.h in Headers */,
-				86972EE7226B597A003C9598 /* UIColor+Extends.h in Headers */,
 				F171EBB3225ED4D100227A13 /* UIDraggableCollectionView.h in Headers */,
 				F171EBC3225F019500227A13 /* NSObject+Observer.h in Headers */,
+				86972EFA226B5C97003C9598 /* UIImage+AI.h in Headers */,
+				86972EEC226B5C8E003C9598 /* NSDate+Extends.h in Headers */,
+				86972EE7226B597A003C9598 /* UIColor+Extends.h in Headers */,
 				86972EF8226B5C97003C9598 /* UIFakeSizeImage.h in Headers */,
 				F171EBC9225F05F700227A13 /* UIScrollView+StatusBar.h in Headers */,
 				F1695BB221C3771D00790DB1 /* UIView+Extension.h in Headers */,
