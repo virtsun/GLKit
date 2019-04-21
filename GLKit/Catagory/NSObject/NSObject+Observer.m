@@ -24,7 +24,7 @@
 
 - (void)dealloc{
     if ( _factor ){
-        [self removeObserver:_observer forKeyPath:_keyPath];
+        [_observer removeObserver:self forKeyPath:_keyPath];
     }
 }
 
@@ -49,13 +49,14 @@
     sub.keyPath = helper.keyPath = keyPath;
     sub.block = helper.block = block;
     
-    [helper addObserver:observer forKeyPath:keyPath options:NSKeyValueObservingOptionNew context:nil];
+    [observer addObserver:helper forKeyPath:keyPath options:NSKeyValueObservingOptionNew context:nil];
 
     helper.factor = sub;
-    const char *helperKey = [NSString stringWithFormat:@"%zd", [observer hash]].UTF8String;
-    
+    const char *helperKey = [NSString stringWithFormat:@"%zd", [helper hash]].UTF8String;
+    const char *subKey = [NSString stringWithFormat:@"%zd", [sub hash]].UTF8String;
+
     objc_setAssociatedObject(self, helperKey, helper, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    objc_setAssociatedObject(observer, helperKey, sub, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(observer, subKey, sub, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 @end
