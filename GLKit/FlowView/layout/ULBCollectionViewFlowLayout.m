@@ -125,6 +125,7 @@ static NSString *const ULBCollectionViewSectionColor = @"com.ulb.ULBCollectionEl
             attr.frame = sectionFrame;
             attr.zIndex = -1;
             attr.section = section;
+            attr.layout = (id<ULBCollectionViewDelegateFlowLayout>)self.collectionView.delegate;
             
             if ([delegate respondsToSelector:@selector(collectionView:layout:colorForSectionAtIndex:)]){
                 attr.backgroudColor = [delegate collectionView:self.collectionView layout:self colorForSectionAtIndex:section];
