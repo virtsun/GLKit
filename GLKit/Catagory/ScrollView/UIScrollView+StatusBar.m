@@ -22,7 +22,7 @@
     
     __weak typeof(self) self_weak_ = self;
     
-    GLObserver(self, frame, ^(id newValue){
+    GLObserver(self, contentOffset, ^(id newValue){
         [self_weak_ update];
     });
 }
