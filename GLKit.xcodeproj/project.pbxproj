@@ -406,8 +406,8 @@
 			isa = PBXGroup;
 			children = (
 				F171EBAA225ED4D100227A13 /* ULBCollectionViewFlowLayout.h */,
-				F171EBAB225ED4D100227A13 /* UICollectionViewFallFlowLayout.m */,
 				F171EBAC225ED4D100227A13 /* ULBCollectionViewFlowLayout.m */,
+				F171EBAB225ED4D100227A13 /* UICollectionViewFallFlowLayout.m */,
 				F171EBAE225ED4D100227A13 /* UICollectionViewFallFlowLayout.h */,
 			);
 			path = layout;

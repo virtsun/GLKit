@@ -10,6 +10,8 @@
 
 
 /// 扩展section的背景色
+@class ULBCollectionReusableView;
+
 @protocol ULBCollectionViewDelegateFlowLayout <UICollectionViewDelegateFlowLayout>
 
 @optional
@@ -17,9 +19,17 @@
 
 @optional
 - (NSString *)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout titleForSectionAtIndex:(NSInteger)section;
+
+- (void)collectionView:(UICollectionView *)collectionView willDisplayDecorationView:(ULBCollectionReusableView *)reuseView forSection:(NSInteger)section;
+
 @end
 
+@interface ULBCollectionReusableView : UICollectionReusableView
+@property (nonatomic, strong) UILabel *titleLabel;
+@end
 
 @interface ULBCollectionViewFlowLayout : UICollectionViewFlowLayout
+
+@property (nonatomic, assign) Class decorationClass;
 
 @end
