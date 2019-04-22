@@ -55,7 +55,7 @@
 - (void)setBadge:(NSUInteger)badge{
     _badgeLabel.hidden = !(badge > 0);
     
-    _badgeLabel.text = [NSString stringWithFormat:@"%lu", MIN(99, badge)];
+    _badgeLabel.text = [NSString stringWithFormat:@"%lu", (unsigned long)MIN(99, badge)];
 }
 
 
