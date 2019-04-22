@@ -16,16 +16,12 @@ static NSString *const ULBCollectionViewSectionColor = @"com.ulb.ULBCollectionEl
 // 背景色
 @property (nonatomic, strong) UIColor *backgroudColor;
 @property (nonatomic, copy) NSString *title;
+@property (nonatomic, weak) id<ULBCollectionViewDelegateFlowLayout> layout;
+@property (nonatomic, assign) NSInteger section;
 
 @end
 
 @implementation ULBCollectionViewLayoutAttributes
-
-@end
-
-@interface ULBCollectionReusableView : UICollectionReusableView
-
-@property (nonatomic, strong) UILabel *titleLabel;
 
 @end
 
@@ -37,6 +33,10 @@ static NSString *const ULBCollectionViewSectionColor = @"com.ulb.ULBCollectionEl
     ULBCollectionViewLayoutAttributes *attr = (ULBCollectionViewLayoutAttributes *)layoutAttributes;
     self.backgroundColor = attr.backgroudColor;
     self.titleLabel.text = attr.title;
+    
+    if ([attr.layout respondsToSelector:@selector(collectionView:willDisplayDecorationView:forSection:)]){
+        [attr.layout collectionView:(UICollectionView *)self.superview willDisplayDecorationView:self forSection:attr.section];
+    }
     
     [self setNeedsLayout];
 }
@@ -85,7 +85,13 @@ static NSString *const ULBCollectionViewSectionColor = @"com.ulb.ULBCollectionEl
     }
     
     //1.初始化
-    [self registerClass:[ULBCollectionReusableView class] forDecorationViewOfKind:ULBCollectionViewSectionColor];
+    if (self.decorationClass){
+        [self registerClass:self.decorationClass
+    forDecorationViewOfKind:ULBCollectionViewSectionColor];
+    }else{
+        [self registerClass:[ULBCollectionReusableView class]
+    forDecorationViewOfKind:ULBCollectionViewSectionColor];
+    }
     [self.decorationViewAttrs removeAllObjects];
     
     for (NSInteger section =0; section < sections; section++) {
@@ -118,6 +124,9 @@ static NSString *const ULBCollectionViewSectionColor = @"com.ulb.ULBCollectionEl
             ULBCollectionViewLayoutAttributes *attr = [ULBCollectionViewLayoutAttributes layoutAttributesForDecorationViewOfKind:ULBCollectionViewSectionColor withIndexPath:[NSIndexPath indexPathForRow:0 inSection:section]];
             attr.frame = sectionFrame;
             attr.zIndex = -1;
+            attr.section = section;
+            attr.layout = (id<ULBCollectionViewDelegateFlowLayout>)self.collectionView.delegate;
+            
             if ([delegate respondsToSelector:@selector(collectionView:layout:colorForSectionAtIndex:)]){
                 attr.backgroudColor = [delegate collectionView:self.collectionView layout:self colorForSectionAtIndex:section];
             }
