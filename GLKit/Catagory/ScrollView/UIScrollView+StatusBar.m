@@ -16,7 +16,7 @@
 @dynamic statusBar;
 
 - (void)setStatusBar:(UIView *)statusBar{
-    objc_setAssociatedObject(self, "statusBar", statusBar, OBJC_ASSOCIATION_ASSIGN);
+    objc_setAssociatedObject(self, "statusBar", statusBar, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 
     [self addSubview:statusBar];
     
