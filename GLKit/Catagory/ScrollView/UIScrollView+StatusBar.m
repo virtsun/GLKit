@@ -77,7 +77,12 @@
 }
 
 - (UIStatusBarStyle)currentStatusBarStyle{
-    return self.statusBar.alpha > .5f?UIStatusBarStyleDefault:self.statusBarStyle;
+    if (self.barMode == UIScrollViewStatusBarModeAlpha){
+        return self.statusBar.alpha > .5f?UIStatusBarStyleDefault:self.statusBarStyle;
+    }else{
+        CGFloat alpha;
+        [self.statusBar.backgroundColor getRed:NULL green:NULL blue:NULL alpha:&alpha];
+        return alpha > .5f?UIStatusBarStyleDefault:self.statusBarStyle;
+    }
 }
-
 @end
