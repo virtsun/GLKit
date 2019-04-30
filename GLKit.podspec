@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "GLKit"
-  s.version      = "1.2.666666"
+  s.version      = "1.2.6"
   s.summary      = "大家都可以使用的公共组件"
 
   # This description is used to generate tags and improve search results.
