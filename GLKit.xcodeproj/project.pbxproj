@@ -54,6 +54,22 @@
 		F1E15EA521A27FF8009B3AD8 /* GCDTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = F1E15EA121A27FF8009B3AD8 /* GCDTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F1E15EA621A27FF8009B3AD8 /* GCDTimerQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E15EA221A27FF8009B3AD8 /* GCDTimerQueue.m */; };
 		F1E15EA721A27FF8009B3AD8 /* GCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E15EA321A27FF8009B3AD8 /* GCDTimer.m */; };
+		F1F6C8C92277F35000F280C5 /* UUID.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F6C8B72277F35000F280C5 /* UUID.h */; };
+		F1F6C8CC2277F35000F280C5 /* UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F6C8BA2277F35000F280C5 /* UUID.m */; };
+		F1F6C8DB2277F37200F280C5 /* UIImage+ThumbnailImage.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F6C8CD2277F37100F280C5 /* UIImage+ThumbnailImage.h */; };
+		F1F6C8DD2277F37200F280C5 /* UIImage+Resize.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F6C8CF2277F37100F280C5 /* UIImage+Resize.h */; };
+		F1F6C8DE2277F37200F280C5 /* UIImage+PureColorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F6C8D02277F37100F280C5 /* UIImage+PureColorImage.m */; };
+		F1F6C8DF2277F37200F280C5 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F6C8D12277F37100F280C5 /* UIImage+RoundedCorner.m */; };
+		F1F6C8E12277F37200F280C5 /* UIImage+FlatUI.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F6C8D32277F37100F280C5 /* UIImage+FlatUI.h */; };
+		F1F6C8E22277F37200F280C5 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F6C8D42277F37100F280C5 /* UIImage+Resize.m */; };
+		F1F6C8E32277F37200F280C5 /* UIImage+PureColorImage.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F6C8D52277F37100F280C5 /* UIImage+PureColorImage.h */; };
+		F1F6C8E62277F37200F280C5 /* UIImage+ThumbnailImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F6C8D82277F37100F280C5 /* UIImage+ThumbnailImage.m */; };
+		F1F6C8E72277F37200F280C5 /* UIImage+RoundedCorner.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F6C8D92277F37100F280C5 /* UIImage+RoundedCorner.h */; };
+		F1F6C8E82277F37200F280C5 /* UIImage+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F6C8DA2277F37200F280C5 /* UIImage+FlatUI.m */; };
+		F1F6C8EB2277F4B000F280C5 /* KeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F6C8E92277F4B000F280C5 /* KeyChainStore.m */; };
+		F1F6C8EC2277F4B000F280C5 /* KeyChainStore.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F6C8EA2277F4B000F280C5 /* KeyChainStore.h */; };
+		F1F6C8EF2277F5DE00F280C5 /* UIImage+Effects.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F6C8ED2277F5DE00F280C5 /* UIImage+Effects.m */; };
+		F1F6C8F02277F5DE00F280C5 /* UIImage+Effects.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F6C8EE2277F5DE00F280C5 /* UIImage+Effects.h */; };
 		F1F72F5422641CF40079A0A1 /* FlowBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F72F3C22641CF40079A0A1 /* FlowBaseViewModel.m */; };
 		F1F72F5522641CF40079A0A1 /* FlowSectionViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F72F3D22641CF40079A0A1 /* FlowSectionViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F1F72F5622641CF40079A0A1 /* FlowBaseViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F72F3E22641CF40079A0A1 /* FlowBaseViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -126,6 +142,22 @@
 		F1E15EA121A27FF8009B3AD8 /* GCDTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDTimer.h; sourceTree = "<group>"; };
 		F1E15EA221A27FF8009B3AD8 /* GCDTimerQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDTimerQueue.m; sourceTree = "<group>"; };
 		F1E15EA321A27FF8009B3AD8 /* GCDTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDTimer.m; sourceTree = "<group>"; };
+		F1F6C8B72277F35000F280C5 /* UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UUID.h; sourceTree = "<group>"; };
+		F1F6C8BA2277F35000F280C5 /* UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UUID.m; sourceTree = "<group>"; };
+		F1F6C8CD2277F37100F280C5 /* UIImage+ThumbnailImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ThumbnailImage.h"; sourceTree = "<group>"; };
+		F1F6C8CF2277F37100F280C5 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		F1F6C8D02277F37100F280C5 /* UIImage+PureColorImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PureColorImage.m"; sourceTree = "<group>"; };
+		F1F6C8D12277F37100F280C5 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		F1F6C8D32277F37100F280C5 /* UIImage+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FlatUI.h"; sourceTree = "<group>"; };
+		F1F6C8D42277F37100F280C5 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		F1F6C8D52277F37100F280C5 /* UIImage+PureColorImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PureColorImage.h"; sourceTree = "<group>"; };
+		F1F6C8D82277F37100F280C5 /* UIImage+ThumbnailImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ThumbnailImage.m"; sourceTree = "<group>"; };
+		F1F6C8D92277F37100F280C5 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		F1F6C8DA2277F37200F280C5 /* UIImage+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FlatUI.m"; sourceTree = "<group>"; };
+		F1F6C8E92277F4B000F280C5 /* KeyChainStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyChainStore.m; sourceTree = "<group>"; };
+		F1F6C8EA2277F4B000F280C5 /* KeyChainStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyChainStore.h; sourceTree = "<group>"; };
+		F1F6C8ED2277F5DE00F280C5 /* UIImage+Effects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Effects.m"; sourceTree = "<group>"; };
+		F1F6C8EE2277F5DE00F280C5 /* UIImage+Effects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Effects.h"; sourceTree = "<group>"; };
 		F1F72F3C22641CF40079A0A1 /* FlowBaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowBaseViewModel.m; sourceTree = "<group>"; };
 		F1F72F3D22641CF40079A0A1 /* FlowSectionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowSectionViewModel.h; sourceTree = "<group>"; };
 		F1F72F3E22641CF40079A0A1 /* FlowBaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowBaseViewModel.h; sourceTree = "<group>"; };
@@ -182,6 +214,18 @@
 		86972EEE226B5C97003C9598 /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
+				F1F6C8EE2277F5DE00F280C5 /* UIImage+Effects.h */,
+				F1F6C8ED2277F5DE00F280C5 /* UIImage+Effects.m */,
+				F1F6C8D32277F37100F280C5 /* UIImage+FlatUI.h */,
+				F1F6C8DA2277F37200F280C5 /* UIImage+FlatUI.m */,
+				F1F6C8D52277F37100F280C5 /* UIImage+PureColorImage.h */,
+				F1F6C8D02277F37100F280C5 /* UIImage+PureColorImage.m */,
+				F1F6C8CF2277F37100F280C5 /* UIImage+Resize.h */,
+				F1F6C8D42277F37100F280C5 /* UIImage+Resize.m */,
+				F1F6C8D92277F37100F280C5 /* UIImage+RoundedCorner.h */,
+				F1F6C8D12277F37100F280C5 /* UIImage+RoundedCorner.m */,
+				F1F6C8CD2277F37100F280C5 /* UIImage+ThumbnailImage.h */,
+				F1F6C8D82277F37100F280C5 /* UIImage+ThumbnailImage.m */,
 				86972EEF226B5C97003C9598 /* UIImage+AI.m */,
 				86972EF1226B5C97003C9598 /* UIFakeSizeImage.m */,
 				86972EF2226B5C97003C9598 /* UIFakeSizeImage.h */,
@@ -272,6 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				F187B2E2226DC31200A7AE99 /* UIButton */,
+				F1F6C8B62277F35000F280C5 /* UUID */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -337,6 +382,25 @@
 				F1E15EA221A27FF8009B3AD8 /* GCDTimerQueue.m */,
 			);
 			path = GCDTimer;
+			sourceTree = "<group>";
+		};
+		F1F6C8A72277F35000F280C5 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UIImage;
+			path = ../../../Assemble/funlive2.4/funlive/Utils/UIImage;
+			sourceTree = "<group>";
+		};
+		F1F6C8B62277F35000F280C5 /* UUID */ = {
+			isa = PBXGroup;
+			children = (
+				F1F6C8B72277F35000F280C5 /* UUID.h */,
+				F1F6C8BA2277F35000F280C5 /* UUID.m */,
+				F1F6C8EA2277F4B000F280C5 /* KeyChainStore.h */,
+				F1F6C8E92277F4B000F280C5 /* KeyChainStore.m */,
+			);
+			path = UUID;
 			sourceTree = "<group>";
 		};
 		F1F72F3A22641CF40079A0A1 /* FlowView */ = {
@@ -413,6 +477,7 @@
 			isa = PBXGroup;
 			children = (
 				86972EEE226B5C97003C9598 /* UIImage */,
+				F1F6C8A72277F35000F280C5 /* UIImage */,
 				86972EE9226B5C8E003C9598 /* NSDate */,
 				86972EE4226B5962003C9598 /* UIColor */,
 				F161041B21A67D88005CBA6D /* UIApplication */,
@@ -458,17 +523,22 @@
 				F161047321AD154D005CBA6D /* Singleton.h in Headers */,
 				F161046C21AD14B7005CBA6D /* CKURLProtocol.h in Headers */,
 				F161046B21AD14B7005CBA6D /* NSURLProtocol+WKWebview.h in Headers */,
+				F1F6C8C92277F35000F280C5 /* UUID.h in Headers */,
 				F161041F21A67D94005CBA6D /* UIApplication+Present.h in Headers */,
 				F10E7CF021B4D592000DFC95 /* NSObject+Swizzling.h in Headers */,
 				F161041921A67C9A005CBA6D /* CKPopView.h in Headers */,
 				F1695BAA21C22C7700790DB1 /* UINavigationController+FDFullscreenPopGesture.h in Headers */,
+				F1F6C8EC2277F4B000F280C5 /* KeyChainStore.h in Headers */,
 				F171EBA6225ED3BF00227A13 /* UITextField+limit.h in Headers */,
 				F171EBB0225ED4D100227A13 /* ULBCollectionViewFlowLayout.h in Headers */,
 				F171EBB4225ED4D100227A13 /* UICollectionViewFallFlowLayout.h in Headers */,
 				F1F72F5C22641CF40079A0A1 /* FlowLayout.h in Headers */,
+				F1F6C8DB2277F37200F280C5 /* UIImage+ThumbnailImage.h in Headers */,
 				F1F72F6322641CF40079A0A1 /* FlowBaseViewCell.h in Headers */,
+				F1F6C8E32277F37200F280C5 /* UIImage+PureColorImage.h in Headers */,
 				F1F72F5522641CF40079A0A1 /* FlowSectionViewModel.h in Headers */,
 				F1F72F6522641CF40079A0A1 /* FlowReuseHeaderFooterView.h in Headers */,
+				F1F6C8E12277F37200F280C5 /* UIImage+FlatUI.h in Headers */,
 				F1F72F5622641CF40079A0A1 /* FlowBaseViewModel.h in Headers */,
 				F1F72F5B22641CF40079A0A1 /* FlowBaseController.h in Headers */,
 				F1F72F5F22641CF40079A0A1 /* FlowBaseModel.h in Headers */,
@@ -479,11 +549,14 @@
 				F171EBC3225F019500227A13 /* NSObject+Observer.h in Headers */,
 				86972EFA226B5C97003C9598 /* UIImage+AI.h in Headers */,
 				86972EEC226B5C8E003C9598 /* NSDate+Extends.h in Headers */,
+				F1F6C8F02277F5DE00F280C5 /* UIImage+Effects.h in Headers */,
 				86972EE7226B597A003C9598 /* UIColor+Extends.h in Headers */,
 				86972EF8226B5C97003C9598 /* UIFakeSizeImage.h in Headers */,
+				F1F6C8E72277F37200F280C5 /* UIImage+RoundedCorner.h in Headers */,
 				F171EBC9225F05F700227A13 /* UIScrollView+StatusBar.h in Headers */,
 				F1695BB221C3771D00790DB1 /* UIView+Extension.h in Headers */,
 				F187B2E6226DC32D00A7AE99 /* UIBlockButton.h in Headers */,
+				F1F6C8DD2277F37200F280C5 /* UIImage+Resize.h in Headers */,
 				F1E15EA521A27FF8009B3AD8 /* GCDTimer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -557,22 +630,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1F6C8CC2277F35000F280C5 /* UUID.m in Sources */,
 				86972EF5226B5C97003C9598 /* UIImage+AI.m in Sources */,
 				F1F72F6422641CF40079A0A1 /* FlowCommonCell.m in Sources */,
 				F1F72F5722641CF40079A0A1 /* FlowSectionViewModel.m in Sources */,
 				F171EBAF225ED4D100227A13 /* UIDraggableCollectionView.m in Sources */,
+				F1F6C8E82277F37200F280C5 /* UIImage+FlatUI.m in Sources */,
 				F1695BB121C3771D00790DB1 /* UIView+Extension.m in Sources */,
 				F1F72F5922641CF40079A0A1 /* FlowProvider.m in Sources */,
+				F1F6C8E22277F37200F280C5 /* UIImage+Resize.m in Sources */,
 				F161041E21A67D94005CBA6D /* UIApplication+Present.m in Sources */,
 				F1F72F5422641CF40079A0A1 /* FlowBaseViewModel.m in Sources */,
 				F161047021AD152F005CBA6D /* CKCache.m in Sources */,
+				F1F6C8DF2277F37200F280C5 /* UIImage+RoundedCorner.m in Sources */,
 				F1F72F5D22641CF40079A0A1 /* FlowBaseController.m in Sources */,
 				F171EBB2225ED4D100227A13 /* ULBCollectionViewFlowLayout.m in Sources */,
 				F161041A21A67C9A005CBA6D /* CKPopView.m in Sources */,
 				F1695BA921C22C7700790DB1 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				86972EED226B5C8E003C9598 /* NSDate+Extends.m in Sources */,
+				F1F6C8E62277F37200F280C5 /* UIImage+ThumbnailImage.m in Sources */,
 				86972EE8226B597A003C9598 /* UIColor+Extends.m in Sources */,
 				F10E7CF121B4D592000DFC95 /* NSObject+Swizzling.m in Sources */,
+				F1F6C8EB2277F4B000F280C5 /* KeyChainStore.m in Sources */,
 				F171EBC4225F019500227A13 /* NSObject+Observer.m in Sources */,
 				86972EF7226B5C97003C9598 /* UIFakeSizeImage.m in Sources */,
 				F171EBB1225ED4D100227A13 /* UICollectionViewFallFlowLayout.m in Sources */,
@@ -581,8 +660,10 @@
 				F1F72F6722641CF40079A0A1 /* FlowBaseViewCell.m in Sources */,
 				F161046A21AD14B7005CBA6D /* CKURLProtocol.m in Sources */,
 				F187B2E5226DC32D00A7AE99 /* UIBlockButton.m in Sources */,
+				F1F6C8EF2277F5DE00F280C5 /* UIImage+Effects.m in Sources */,
 				F1E15EA621A27FF8009B3AD8 /* GCDTimerQueue.m in Sources */,
 				F1F72F5A22641CF40079A0A1 /* FlowLayout.m in Sources */,
+				F1F6C8DE2277F37200F280C5 /* UIImage+PureColorImage.m in Sources */,
 				F161046921AD14B7005CBA6D /* NSURLProtocol+WKWebview.m in Sources */,
 				F1F72F5E22641CF40079A0A1 /* FlowBaseModel.m in Sources */,
 				F1F72F6222641CF40079A0A1 /* FlowReuseHeaderFooterView.m in Sources */,
