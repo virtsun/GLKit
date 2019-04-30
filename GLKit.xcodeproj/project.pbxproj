@@ -54,22 +54,22 @@
 		F1E15EA521A27FF8009B3AD8 /* GCDTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = F1E15EA121A27FF8009B3AD8 /* GCDTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F1E15EA621A27FF8009B3AD8 /* GCDTimerQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E15EA221A27FF8009B3AD8 /* GCDTimerQueue.m */; };
 		F1E15EA721A27FF8009B3AD8 /* GCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E15EA321A27FF8009B3AD8 /* GCDTimer.m */; };
-		F1F6C8C92277F35000F280C5 /* UUID.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F6C8B72277F35000F280C5 /* UUID.h */; };
+		F1F6C8C92277F35000F280C5 /* UUID.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F6C8B72277F35000F280C5 /* UUID.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F1F6C8CC2277F35000F280C5 /* UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F6C8BA2277F35000F280C5 /* UUID.m */; };
-		F1F6C8DB2277F37200F280C5 /* UIImage+ThumbnailImage.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F6C8CD2277F37100F280C5 /* UIImage+ThumbnailImage.h */; };
-		F1F6C8DD2277F37200F280C5 /* UIImage+Resize.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F6C8CF2277F37100F280C5 /* UIImage+Resize.h */; };
+		F1F6C8DB2277F37200F280C5 /* UIImage+ThumbnailImage.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F6C8CD2277F37100F280C5 /* UIImage+ThumbnailImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1F6C8DD2277F37200F280C5 /* UIImage+Resize.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F6C8CF2277F37100F280C5 /* UIImage+Resize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F1F6C8DE2277F37200F280C5 /* UIImage+PureColorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F6C8D02277F37100F280C5 /* UIImage+PureColorImage.m */; };
 		F1F6C8DF2277F37200F280C5 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F6C8D12277F37100F280C5 /* UIImage+RoundedCorner.m */; };
-		F1F6C8E12277F37200F280C5 /* UIImage+FlatUI.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F6C8D32277F37100F280C5 /* UIImage+FlatUI.h */; };
+		F1F6C8E12277F37200F280C5 /* UIImage+FlatUI.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F6C8D32277F37100F280C5 /* UIImage+FlatUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F1F6C8E22277F37200F280C5 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F6C8D42277F37100F280C5 /* UIImage+Resize.m */; };
-		F1F6C8E32277F37200F280C5 /* UIImage+PureColorImage.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F6C8D52277F37100F280C5 /* UIImage+PureColorImage.h */; };
+		F1F6C8E32277F37200F280C5 /* UIImage+PureColorImage.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F6C8D52277F37100F280C5 /* UIImage+PureColorImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F1F6C8E62277F37200F280C5 /* UIImage+ThumbnailImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F6C8D82277F37100F280C5 /* UIImage+ThumbnailImage.m */; };
-		F1F6C8E72277F37200F280C5 /* UIImage+RoundedCorner.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F6C8D92277F37100F280C5 /* UIImage+RoundedCorner.h */; };
+		F1F6C8E72277F37200F280C5 /* UIImage+RoundedCorner.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F6C8D92277F37100F280C5 /* UIImage+RoundedCorner.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F1F6C8E82277F37200F280C5 /* UIImage+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F6C8DA2277F37200F280C5 /* UIImage+FlatUI.m */; };
 		F1F6C8EB2277F4B000F280C5 /* KeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F6C8E92277F4B000F280C5 /* KeyChainStore.m */; };
-		F1F6C8EC2277F4B000F280C5 /* KeyChainStore.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F6C8EA2277F4B000F280C5 /* KeyChainStore.h */; };
+		F1F6C8EC2277F4B000F280C5 /* KeyChainStore.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F6C8EA2277F4B000F280C5 /* KeyChainStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F1F6C8EF2277F5DE00F280C5 /* UIImage+Effects.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F6C8ED2277F5DE00F280C5 /* UIImage+Effects.m */; };
-		F1F6C8F02277F5DE00F280C5 /* UIImage+Effects.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F6C8EE2277F5DE00F280C5 /* UIImage+Effects.h */; };
+		F1F6C8F02277F5DE00F280C5 /* UIImage+Effects.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F6C8EE2277F5DE00F280C5 /* UIImage+Effects.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F1F72F5422641CF40079A0A1 /* FlowBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F72F3C22641CF40079A0A1 /* FlowBaseViewModel.m */; };
 		F1F72F5522641CF40079A0A1 /* FlowSectionViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F72F3D22641CF40079A0A1 /* FlowSectionViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F1F72F5622641CF40079A0A1 /* FlowBaseViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F72F3E22641CF40079A0A1 /* FlowBaseViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -523,22 +523,17 @@
 				F161047321AD154D005CBA6D /* Singleton.h in Headers */,
 				F161046C21AD14B7005CBA6D /* CKURLProtocol.h in Headers */,
 				F161046B21AD14B7005CBA6D /* NSURLProtocol+WKWebview.h in Headers */,
-				F1F6C8C92277F35000F280C5 /* UUID.h in Headers */,
 				F161041F21A67D94005CBA6D /* UIApplication+Present.h in Headers */,
 				F10E7CF021B4D592000DFC95 /* NSObject+Swizzling.h in Headers */,
 				F161041921A67C9A005CBA6D /* CKPopView.h in Headers */,
 				F1695BAA21C22C7700790DB1 /* UINavigationController+FDFullscreenPopGesture.h in Headers */,
-				F1F6C8EC2277F4B000F280C5 /* KeyChainStore.h in Headers */,
 				F171EBA6225ED3BF00227A13 /* UITextField+limit.h in Headers */,
 				F171EBB0225ED4D100227A13 /* ULBCollectionViewFlowLayout.h in Headers */,
 				F171EBB4225ED4D100227A13 /* UICollectionViewFallFlowLayout.h in Headers */,
 				F1F72F5C22641CF40079A0A1 /* FlowLayout.h in Headers */,
-				F1F6C8DB2277F37200F280C5 /* UIImage+ThumbnailImage.h in Headers */,
 				F1F72F6322641CF40079A0A1 /* FlowBaseViewCell.h in Headers */,
-				F1F6C8E32277F37200F280C5 /* UIImage+PureColorImage.h in Headers */,
 				F1F72F5522641CF40079A0A1 /* FlowSectionViewModel.h in Headers */,
 				F1F72F6522641CF40079A0A1 /* FlowReuseHeaderFooterView.h in Headers */,
-				F1F6C8E12277F37200F280C5 /* UIImage+FlatUI.h in Headers */,
 				F1F72F5622641CF40079A0A1 /* FlowBaseViewModel.h in Headers */,
 				F1F72F5B22641CF40079A0A1 /* FlowBaseController.h in Headers */,
 				F1F72F5F22641CF40079A0A1 /* FlowBaseModel.h in Headers */,
@@ -549,14 +544,19 @@
 				F171EBC3225F019500227A13 /* NSObject+Observer.h in Headers */,
 				86972EFA226B5C97003C9598 /* UIImage+AI.h in Headers */,
 				86972EEC226B5C8E003C9598 /* NSDate+Extends.h in Headers */,
+				F1F6C8C92277F35000F280C5 /* UUID.h in Headers */,
+				F1F6C8EC2277F4B000F280C5 /* KeyChainStore.h in Headers */,
+				F1F6C8DB2277F37200F280C5 /* UIImage+ThumbnailImage.h in Headers */,
+				F1F6C8E32277F37200F280C5 /* UIImage+PureColorImage.h in Headers */,
+				F1F6C8E12277F37200F280C5 /* UIImage+FlatUI.h in Headers */,
 				F1F6C8F02277F5DE00F280C5 /* UIImage+Effects.h in Headers */,
+				F1F6C8E72277F37200F280C5 /* UIImage+RoundedCorner.h in Headers */,
+				F1F6C8DD2277F37200F280C5 /* UIImage+Resize.h in Headers */,
 				86972EE7226B597A003C9598 /* UIColor+Extends.h in Headers */,
 				86972EF8226B5C97003C9598 /* UIFakeSizeImage.h in Headers */,
-				F1F6C8E72277F37200F280C5 /* UIImage+RoundedCorner.h in Headers */,
 				F171EBC9225F05F700227A13 /* UIScrollView+StatusBar.h in Headers */,
 				F1695BB221C3771D00790DB1 /* UIView+Extension.h in Headers */,
 				F187B2E6226DC32D00A7AE99 /* UIBlockButton.h in Headers */,
-				F1F6C8DD2277F37200F280C5 /* UIImage+Resize.h in Headers */,
 				F1E15EA521A27FF8009B3AD8 /* GCDTimer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
